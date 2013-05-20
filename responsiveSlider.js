@@ -1,15 +1,15 @@
 // define and load
 var slider = $('ul.slider');
 init();
-sideStage();
-stageing();
+labelSiblings();
+bindEventHandler();
 
 // stage this
-function stageing() {
+function bindEventHandler() {
     slider.on('click','li', function(){
         slider.children().removeClass();
         $(this).addClass('stage');
-        sideStage();
+        labelSiblings();
     });
 }
 
@@ -20,8 +20,8 @@ function init() {
     };  
 }
 
-// sideStage before and after
-function sideStage() {
+// labelSiblings before and after
+function labelSiblings() {
     var stage = slider.children('li.stage');
 
     //before
