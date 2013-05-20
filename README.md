@@ -1,0 +1,4 @@
+responsiveSlider
+================
+
+Responsive jQuery Slider
